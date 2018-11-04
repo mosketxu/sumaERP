@@ -2,7 +2,7 @@
 
 use Faker\Generator as Faker;
 
-$factory->define(App\PeriodoPagos::class, function (Faker $faker) {
+$factory->define(App\ModoPago::class, function (Faker $faker) {
     return [
         //
     ];

@@ -18,11 +18,12 @@ class CreatePusTable extends Migration
             $table->unsignedInteger('empresa_id');
             $table->foreign('empresa_id')->references('id')->on('empresas');
             $table->string('name');
-            $table->string('ce');
-            $table->string('us');
-            $table->string('pw');
-            $table->string('observaciones');
+            $table->string('ce')->nullable();
+            $table->string('us')->nullable();
+            $table->string('pw')->nullable();
+            $table->string('observaciones')->nullable();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCondicionPagosTable extends Migration
+class CreateModoPagosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCondicionPagosTable extends Migration
      */
     public function up()
     {
-        Schema::create('condicion_pagos', function (Blueprint $table) {
+        Schema::create('modo_pagos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateCondicionPagosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('condicion_pagos');
+        Schema::dropIfExists('modo_pagos');
     }
 }

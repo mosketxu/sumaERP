@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateModoFacturacionsTable extends Migration
+class CreateCondicionFacturacionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,16 @@ class CreateModoFacturacionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('modo_facturacions', function (Blueprint $table) {
+        Schema::create('condicion_facturacions', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('empresa_id');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
-            $table->integer('dia');
-            $table->unsignedInteger('condicionpago_id');
-            $table->foreign('condicionpago_id')->references('id')->on('condicion_pagos');
+            $table->unsignedInteger('modopago_id');
+            $table->foreign('modopago_id')->references('id')->on('modo_pagos');
             $table->unsignedInteger('periodopago_id');
             $table->foreign('periodopago_id')->references('id')->on('periodo_pagos');
+            $table->integer('diafactura')->nullable();
+            $table->integer('diavencimiento')->nullable();
             $table->timestamps();
         });
     }
@@ -33,6 +34,6 @@ class CreateModoFacturacionsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('modo_facturacions');
+        Schema::dropIfExists('condicion_facturacions');
     }
 }
