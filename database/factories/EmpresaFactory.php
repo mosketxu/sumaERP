@@ -5,9 +5,11 @@ use Faker\Generator as Faker;
 $factory->define(App\Empresa::class, function (Faker $faker) {
     $tipoempresa = $faker->randomElement([\App\TipoEmpresa::CLIENTE, \App\TipoEmpresa::PROVEEDOR,\App\TipoEmpresa::CLIENTEPROVEEDOR,\App\TipoEmpresa::INTERNO, \App\TipoEmpresa::OTROS]);
     // $tipoempresa = $faker->randomElement([\App\TipoEmpresa::CLIENTE,\App\TipoEmpresa::PROVEEDOR,\App\TipoEmpresa::INTERNO]);
-    
+    $name=$faker->company;
+
     return [
-        'name'=>$faker->company,
+        'name'=>$name,
+        'slug'=>str_slug($name,'-'),
         'tipoempresa_id'=>$tipoempresa,
         'direccion'=>$faker->address,
         'codpostal'=>$faker->postcode,
