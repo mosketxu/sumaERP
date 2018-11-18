@@ -11,7 +11,7 @@ $factory->define(App\Contacto::class, function (Faker $faker) {
         'esfacturacion' => '0',
         'name' => $name,
         'lastname'=>$lastname,
-        'slug'=>str_slug($name,'-',$lastname,'-'),
+        'slug' => str_slug($name . " " . $lastname, '-'),
         'email1' => $faker->safeEmail,
         'telefono1' => $faker->phoneNumber,
     ];
