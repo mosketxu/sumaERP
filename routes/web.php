@@ -13,10 +13,12 @@
 
 Route::get('/set_language/{lang}', 'Controller@setLanguage')->name('set_language');
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'SumaController@index')->name('home');
+Route::get('/home/{has_tag?', 'SumaController@index')->name('homeServicios');
+Route::get('/{has_tag?}', 'SumaController@suma')->name('suma');
+
+
+Route::get('/home', 'HomeController@index')->name('index');
+
