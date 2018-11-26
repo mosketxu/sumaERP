@@ -3,6 +3,9 @@ body {
     /* overflow-x: hidden; */
 }
 
+.mb-10, .my-10 {
+    margin-bottom: 9rem!important;
+}
 .display-5 {
     font-size: 2.5rem;
     font-weight: 400;

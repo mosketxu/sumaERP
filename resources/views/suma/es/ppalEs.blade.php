@@ -4,22 +4,22 @@
             <div class="row text-muted">
                 <div class="col-md-3 text-center ">
                     <i class="fas fa-chart-pie fa-3x mb-2 "></i>
-                    <h3 class="display-6">Contabilidad</h3>
+                    <h3 class="display-7">Contabilidad</h3>
                     <p>Mantenemos una imagen fiel y veraz del estado de tu negocio.</p>
                 </div>
                 <div class="col-md-3 text-center ">
                     <i class="fas fa-balance-scale fa-3x mb-2 "></i>
-                    <h3 class="display-6">Fiscalidad</h3>
+                    <h3 class="display-7">Fiscalidad</h3>
                     <p>Te asesoramos en los aspectos legales.</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <i class="fas fa-keyboard fa-3x mb-2"></i>
-                    <h3 class="display-6">Administración</h3>
+                    <h3 class="display-7">Administración</h3>
                     <p>Te ayudamos con tus tareas diarias para que te centres en tus objetivos.</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <i class="fas fa-chalkboard-teacher fa-3x mb-2"></i>
-                    <h3 class="display-6">Consultoria</h3>
+                    <h3 class="display-7">Consultoria</h3>
                     <p>Analizamos tus procesos en busca de la mejora.</p>
                 </div>
             </div>

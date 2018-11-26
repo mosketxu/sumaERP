@@ -49,10 +49,8 @@
                             <a href={{ route( 'suma','contacto')}} class="nav-link text-primary ">{{__("Contacto")}}</a>
                         </li>
                         <li class="nav-item dropdown" >
-                            <a href="#" class="nav-link text-primary dropdown-toggle" data-toggle="dropdown"><i class="fas fa-language fa-2x fa-lg"></i></a>
+                            <a href="#" class="nav-link text-primary dropdown-toggle" data-toggle="dropdown"><i class="fas fa-globe fa-lg mt-1"></i></a>
                             <div class="dropdown-menu">
-                                {{-- <a href="{{ url('idioma','en') }}" class="nav-link text-primary ">en</a>
-                                <a href="{{ url('idioma','es') }}" class="nav-link text-primary ">es</a> --}}
                                 <a class="dropdown-item" href="{{ route('set_language', ['es']) }}">Es</a>
                                 <a class="dropdown-item" href="{{ route('set_language', ['en']) }}">En</a>
                             </div>
@@ -65,7 +63,6 @@
     @section('carrusel')
     
     @section('content')
-
 
 </body>
 <!-- FOOTER -->

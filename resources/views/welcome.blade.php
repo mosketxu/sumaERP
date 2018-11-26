@@ -16,7 +16,6 @@
     </li>
 @show
 
-@section('title','Suma Apoyo -Welcome')
 @section('home','active')
 
 @section('carrusel')
@@ -77,11 +76,14 @@
     </div>
 @show
 
-@section('content')
-    @if(App::getLocale()=='es')
-        @include('suma.ppalEs')
-    @else
-        @include('suma.ppalEn')
-    @endif
-
-@show
+@if(App::getLocale()=='es')
+    @section('title','Suma - Bienvenido')
+    @section('content')
+        @include('suma.es.ppalEs')    
+    @show
+@else
+    @section('title','Suma - Welcome')
+    @section('content')
+        @include('suma.en.ppalEn')    
+    @show
+@endif

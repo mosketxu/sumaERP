@@ -4,22 +4,22 @@
             <div class="row text-muted">
                 <div class="col-md-3 text-center ">
                     <i class="fas fa-chart-pie fa-3x mb-2 "></i>
-                    <h3 class="display-6">Accounting</h3>
+                    <h3 class="display-7">Accounting</h3>
                     <p>We maintain a faithful and truthful image of the state of your business.</p>
                 </div>
                 <div class="col-md-3 text-center ">
                     <i class="fas fa-balance-scale fa-3x mb-2 "></i>
-                    <h3 class="display-6">Tax Area</h3>
+                    <h3 class="display-7">Tax Area</h3>
                     <p>We advise you on the legal aspects.</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <i class="fas fa-keyboard fa-3x mb-2"></i>
-                    <h3 class="display-6">Administration</h3>
+                    <h3 class="display-7">Administration</h3>
                     <p>We help you with your daily tasks to focus on your goals.</p>
                 </div>
                 <div class="col-md-3 text-center">
                     <i class="fas fa-chalkboard-teacher fa-3x mb-2"></i>
-                    <h3 class="display-6">Consulting</h3>
+                    <h3 class="display-7">Consulting</h3>
                     <p>We analyze your processes in search of improvement.</p>
                 </div>
             </div>
@@ -32,7 +32,7 @@
             <div class="col">
                 <div class="container pt-5">
                     <h1 class="display-4">Join Us!</h1>
-                    <p class="d-none d-md-block">We are more than just services.</p>
+                    <p class="d-none d-md-block">We are more than just services</p>
                 </div>
             </div>
         </div>
@@ -65,8 +65,8 @@
         <div class="dark-overlay">
             <div class="col">
                 <div class="container pt-5">
-                    <h1 class="display-4">Our offer.</h1>
-                    <p class="d-none d-md-block"> We specialize in multiple areas .</p>
+                    <h1 class="display-4">Our offer</h1>
+                    <p class="d-none d-md-block"> We specialize in multiple areas</p>
                 </div>
             </div>
         </div>
@@ -250,7 +250,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-3">
-                    <h3 class="display-6 text-center">A management tool.</h3>
+                    <h3 class="display-6 text-center">A management tool</h3>
                     <div class="d-flex">
                         <div class="align-self-center pr-4 pb-2">
                             <i class="fas fa-paperclip fa-lg "></i>
@@ -326,8 +326,8 @@
         <div class="dark-overlay">
             <div class="col">
                 <div class="container pt-5">
-                    <h1 class="display-4">Área Fiscal</h1>
-                    <p class="d-none d-md-block">Las obligaciones fiscales deben cumplirse puntual y correctamente</p>
+                    <h1 class="display-4">Tax area</h1>
+                    <p class="d-none d-md-block">Tax obligations must be met promptly and correctly</p>
                 </div>
             </div>
         </div>
@@ -343,13 +343,13 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-3 order-1">
-                    <h3 class="display-6 text-center">Fiscalidad segura y a tiempo.</h3>
+                    <h3 class="display-6 text-center">Secure and timely taxation.</h3>
                     <div class="d-flex">
                         <div class="align-self-center pr-4 pb-2">
                             <i class="fas fa-paperclip fa-lg "></i>
                         </div>
                         <div class=" align-self-start">
-                            Confección y presentación de impuestos (IVA, IRPF, etc) mensuales, trimestrales y resúmenes anuales.
+                            Preparation and submission of tax forms (VAT, personal income tax, etc.) monthly, quarterly and annual summaries.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -357,7 +357,7 @@
                             <i class="fas fa-paperclip fa-lg "></i>
                         </div>
                         <div class=" align-self-start">
-                            Declaración anual de Operaciones con terceros.
+                            Annual Statement of Operations with third parties.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -365,7 +365,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Declaración de operaciones Intracomunitarias (349 e Intrastat).
+                            Statements of operations within the EU (349 and Intrastat).
                         </div>
                     </div>
                     <div class="d-flex">
@@ -373,7 +373,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Tributación de no residentes.
+                            Taxation for non-residents.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -381,7 +381,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Impuesto de Sociedades y pagos a cuenta relacionados con el mismo.
+                            Corporate Tax and prepayments related to this tax.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -389,7 +389,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Asistencia en inspecciones de Hacienda y requerimientos.
+                            Assistance with Income Tax inspections and requirements.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -397,7 +397,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Declaración de Renta y Patrimonio.
+                            Equity and Asset Statement.
                         </div>
                     </div>
                 </div>
@@ -409,8 +409,8 @@
         <div class="dark-overlay">
             <div class="col">
                 <div class="container pt-5">
-                    <h1 class="display-4">Área Mercantil</h1>
-                    <p class="d-none d-md-block">La información mercantil es pública, por lo que debe ser totalmente fiable</p>
+                    <h1 class="display-4">Commercial area</h1>
+                    <p class="d-none d-md-block">Commercial information is public, so it must be totally reliable</p>
                 </div>
             </div>
         </div>
@@ -426,13 +426,13 @@
                     </div>
                 </div>
                 <div class="col-md-6 mt-4 mb-2">
-                    <h3 class="display-7 text-center">Cumplimiento de las obligaciones legales ante el Registro Mercantil correspondiente.</h3>
+                    <h3 class="display-7 text-center">We help fulfill the legal obligations of your Company with the corresponding Commercial Registry:</h3>
                     <div class="d-flex mt-5">
                         <div class="align-self-center pr-4 pb-2">
                             <i class="fas fa-paperclip fa-lg "></i>
                         </div>
                         <div class=" align-self-start">
-                            Legalización de libros oficiales.
+                            Legalization of Official Books.
                         </div>
                     </div>
                     <div class="d-flex mt-2">
@@ -440,7 +440,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Confección y presentación de Cuentas Anuales.
+                            Preparation and submission of financial statements.
                         </div>
                     </div>
                     <div class="d-flex mt-2">
@@ -448,7 +448,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Actas de Aprobación de Cuentas.
+                            Annual Accounts official approval.
                         </div>
                     </div>
                 </div>
@@ -461,8 +461,8 @@
         <div class="dark-overlay">
             <div class="col">
                 <div class="container pt-5">
-                    <h1 class="display-4">Administración</h1>
-                    <p class="d-none d-md-block">Una correcta gestión de la documentación aporta eficiencia a nuestro trabajo.</p>
+                    <h1 class="display-4">Administration</h1>
+                    <p class="d-none d-md-block">Proper management of documentation provides more efficiency to our work</p>
                 </div>
             </div>
         </div>
@@ -478,13 +478,13 @@
                     </div>
                 </div>
                 <div class="col-md-6 mb-3 order-1">
-                    <h3 class="display-6 text-center">Ejecución de tareas administrativas.</h3>
+                    <h3 class="display-6 text-center">Execution of administrative tasks.</h3>
                     <div class="d-flex">
                         <div class="align-self-center pr-4 pb-2">
                             <i class="fas fa-paperclip fa-lg "></i>
                         </div>
                         <div class=" align-self-start">
-                            Organización de archivos físicos y virtuales.
+                            Organization of physical and virtual files.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -492,7 +492,7 @@
                             <i class="fas fa-paperclip fa-lg "></i>
                         </div>
                         <div class=" align-self-start">
-                            Codificación de facturas emitidas y recibidas.
+                            Coding of invoices issued and received.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -500,7 +500,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Seguimiento y/o gestión de pagos.
+                            Follow-up and/or management of accounts payable.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -508,7 +508,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Seguimiento y/o gestión de cobros.
+                            Follow-up and/or management of accounts receivable.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -516,7 +516,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Seguimiento de vencimientos.
+                            Tracking maturities.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -524,7 +524,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Gestión de tesorería.
+                            Treasury Management.
                         </div>
                     </div>
                     <div class="d-flex">
@@ -532,7 +532,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Preparación y control de hojas de gastos.
+                            Preparation and control of expense sheets.
                         </div>
                     </div>
                 </div>
@@ -544,8 +544,8 @@
         <div class="dark-overlay">
             <div class="col">
                 <div class="container pt-5">
-                    <h1 class="display-4">Consultoría y Recursos Humanos</h1>
-                    <p class="d-none d-lg-block">Un circuito bien diseñado optimiza los procedimientos empresariales</p>
+                    <h1 class="display-4">Consulting and Human Resources</h1>
+                    <p class="d-none d-lg-block">A well-designed circuit optimizes business processes</p>
                 </div>
             </div>
         </div>
@@ -561,13 +561,13 @@
                     </div>
                 </div>
                 <div class="col-md-6 mt-4 mb-2">
-                    <h3 class="display-7 text-center">Te ayudamos a mejorar tus procesos...</h3>
+                    <h3 class="display-7 text-center">We help you improve your processes...</h3>
                     <div class="d-flex mt-2">
                         <div class="align-self-center pr-4 pb-2">
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Definición de sistemas y circuitos administrativos y contables para procesos que se inician.
+                            Definition of administrative and accounting systems and circuits for first-time processes.
                         </div>
                     </div>
                     <div class="d-flex mt-2">
@@ -575,7 +575,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Te acompañamos en la transformación digital de tu empresa.
+                            We accompany you in the digital transformation of your company.
                         </div>
                     </div>
                     <div class="d-flex mt-2">
@@ -583,7 +583,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Desarrollo de herramientas y aplicaciones web.
+                            Development of Web tools and applications.
                         </div>
                     </div>
                     <div class="d-flex mt-2">
@@ -591,7 +591,7 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Análisis y optimización de sistemas y circuitos administrativos y contables.
+                            Analysis and optimization of administrative and accounting systems and circuits.
                         </div>
                     </div>
                     <div class="d-flex mt-2">
@@ -599,16 +599,16 @@
                             <i class="fas fa-paperclip fa-lg  "></i>
                         </div>
                         <div class="align-self-start">
-                            Análisis de sistemas retributivos básicos (remuneraciones en especie).
+                            Analysis of basic wage systems (wages in kind).
                         </div>
                     </div>
-                    <h3 class="display-7 text-center">y RRHH</h3>
+                    <h3 class="display-7 text-center">and HR</h3>
                     <div class="d-flex">
                         <div class="align-self-center pr-4 pb-2">
                             <i class="fas fa-paperclip fa-lg "></i>
                         </div>
                         <div class=" align-self-start">
-                            Apoyo en procesos de selección de profesionales financieros.
+                            Assistance in the selection of financial professionals.
                         </div>
                     </div>
                 </div>
