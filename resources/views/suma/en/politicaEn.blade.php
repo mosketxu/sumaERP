@@ -1,4 +1,5 @@
 <section id="politica" class="container mb-10">
+
     <h1  class="display-5">Privacy Policy</h1>
 
 		<h2 class="display-7">Introduction</h2>

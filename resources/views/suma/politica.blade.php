@@ -16,7 +16,6 @@
     @section('title','Suma - Politica Seguridad')
     @section('content')
         @include('suma.es.politicaEs')    
-
     @show
 @else
     @section('title','Suma - Private Policy')
