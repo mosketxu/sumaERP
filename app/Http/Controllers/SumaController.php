@@ -6,11 +6,13 @@ use Illuminate\Http\Request;
 
 class SumaController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         return view('welcome');
     }
 
-    public function suma($tag){
-        return view('suma.' . $tag);
+    public function suma($tag)
+    {
+        return view('partials.suma.' . $tag);
     }
 }

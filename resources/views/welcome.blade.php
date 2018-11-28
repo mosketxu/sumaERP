@@ -14,7 +14,7 @@
             <a href="{{ route( 'suma', 'politica') }} " class="dropdown-item ">{{__("Politica de seguridad")}}</a>
         </div>
     </li>
-@show
+@endsection
 
 @section('home','active')
 
@@ -74,16 +74,16 @@
                 <span class="carousel-control-next-icon"></span>
         </a>
     </div>
-@show
+@endsection
 
 @if(App::getLocale()=='es')
     @section('title','Suma - Bienvenido')
     @section('content')
-        @include('suma.es.ppalEs')    
-    @show
+        @include('partials.suma.es.ppalEs')    
+    @endsection
 @else
     @section('title','Suma - Welcome')
     @section('content')
-        @include('suma.en.ppalEn')    
-    @show
+        @include('partials.suma.en.ppalEn')    
+    @endsection
 @endif
