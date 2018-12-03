@@ -32,10 +32,11 @@ class Banco extends Model
 {
     use SoftDeletes;
 
-	protected $fillable = ['empresa_id', 'name', 'iban', 'principal', 'observaciones', 'estado'];
+    protected $fillable = ['empresa_id', 'banco', 'iban', 'principal', 'observaciones', 'estado'];
+    protected $dates = ['deleted_at'];
 
     public function empresa()
     {
-        return $this->belongsTo(Empresa::class)->select('id','name');
+        return $this->belongsTo(Empresa::class);
     }
 }

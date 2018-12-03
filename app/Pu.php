@@ -32,11 +32,11 @@ class Pu extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['empresa_id','name','ce','us','pw','observaciones'];
+    protected $fillable = ['empresa_id', 'name', 'ce', 'us', 'pw', 'observaciones'];
 
-    public function empresa(){
-        return $this->belongsTo(Empresa::class)
-            ->select('id','empresa_id','name','ce','us','pw','observaciones');
+    public function empresa()
+    {
+        return $this->belongsTo(Empresa::class);
     }
 
 }

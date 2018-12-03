@@ -23,12 +23,12 @@ class CreateEmpresasTable extends Migration
             $table->string('codpostal')->nullable();
             $table->string('localidad')->nullable();
             $table->integer('provincia_id')->nullable();
-            $table->string('pais_id',2)->nullable();
+            $table->string('pais_id', 2)->nullable();
             $table->string('cifnif')->nullable();
             $table->string('tfno')->nullable();
             $table->string('email')->nullable();
             $table->string('web')->nullable();
-            $table->string('idioma',2)->default('es');
+            $table->string('idioma', 2)->default('es');
             $table->string('cuentacontable')->nullable();
             $table->integer('marta')->default('100');
             $table->integer('susana')->default('0');

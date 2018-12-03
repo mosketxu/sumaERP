@@ -11,10 +11,10 @@ class TipoEmpresasSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\TipoEmpresa::class, 1)->create(['name' => 'cliente']);
-        factory(\App\TipoEmpresa::class, 1)->create(['name' => 'proveedor']);
-        factory(\App\TipoEmpresa::class, 1)->create(['name' => 'clienteprovedor']);
-        factory(\App\TipoEmpresa::class, 1)->create(['name' => 'interno']);
-        factory(\App\TipoEmpresa::class, 1)->create(['name' => 'otros']);
+        factory(\App\TipoEmpresa::class, 1)->create(['tipoempresa' => 'cliente']);
+        factory(\App\TipoEmpresa::class, 1)->create(['tipoempresa' => 'proveedor']);
+        factory(\App\TipoEmpresa::class, 1)->create(['tipoempresa' => 'clienteprovedor']);
+        factory(\App\TipoEmpresa::class, 1)->create(['tipoempresa' => 'interno']);
+        factory(\App\TipoEmpresa::class, 1)->create(['tipoempresa' => 'otros']);
     }
 }

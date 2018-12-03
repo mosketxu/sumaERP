@@ -16,9 +16,8 @@ Route::get('/set_language/{lang}', 'Controller@setLanguage')->name('set_language
 Auth::routes();
 
 Route::get('/', 'SumaController@index')->name('home');
-Route::get('/home/{has_tag?', 'SumaController@index')->name('homeServicios');
-Route::get('/{has_tag?}', 'SumaController@suma')->name('suma');
+Route::get('suma/home/{has_tag?', 'SumaController@index')->name('homeServicios');
+Route::get('suma/{has_tag?}', 'SumaController@suma')->name('suma');
 
-
-Route::get('/home', 'HomeController@index')->name('index');
-
+Route::get('/empresas', 'EmpresaController@index');
+Route::get('empresas/home', 'EmpresaController@show')->name('empresasHome');

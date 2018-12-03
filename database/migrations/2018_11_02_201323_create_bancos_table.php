@@ -17,11 +17,12 @@ class CreateBancosTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('empresa_id');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
-            $table->string('name');
+            $table->string('banco');
             $table->string('iban');
             $table->boolean('principal')->default(0);
             $table->string('observaciones')->nullable();
             $table->boolean('estado')->default('1');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -19,10 +19,11 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Departamento extends Model
 {
-    protected $fillable = ['name'];
+    protected $fillable = ['departamento'];
 
-    public function contactos(){
-    return $this->belongsTo(Contacto::class);
+    public function contactos()
+    {
+        return $this->belongsTo(Contacto::class);
     }
 
 }

@@ -14,11 +14,11 @@ class PeriodoPagosSeeder extends Seeder
         DB::table('periodo_pagos')->delete();
 
         DB::table('periodo_pagos')->insert([
-            ['name'=>'Mensual'],
-            ['name'=>'Trimestral'],
-            ['name'=>'Anual'],
-            ['name'=>'One Shot'],
-            ['name'=>'No definida'],
-        ]);            
+            ['perpago3' => 'Men', 'periodopago' => 'Mensual'],
+            ['perpago3' => 'Tri', 'periodopago' => 'Trimestral'],
+            ['perpago3' => 'Anu', 'periodopago' => 'Anual'],
+            ['perpago3' => 'One', 'periodopago' => 'One Shot'],
+            ['perpago3' => 'NoD', 'periodopago' => 'No definido'],
+        ]);
     }
 }

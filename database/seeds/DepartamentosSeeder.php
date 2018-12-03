@@ -14,10 +14,10 @@ class DepartamentosSeeder extends Seeder
         DB::table('departamentos')->delete();
 
         DB::table('departamentos')->insert([
-            ['name'=>'Marketing'],
-            ['name'=>'Contabilidad'],
-            ['name'=>'Administracion'],
-            ['name'=>'Otros'],
-        ]);            
+            ['departamento' => 'Marketing'],
+            ['departamento' => 'Contabilidad'],
+            ['departamento' => 'Administracion'],
+            ['departamento' => 'Otros'],
+        ]);
     }
 }

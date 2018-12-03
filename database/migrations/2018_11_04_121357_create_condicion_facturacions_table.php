@@ -17,8 +17,8 @@ class CreateCondicionFacturacionsTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('empresa_id');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
-            $table->unsignedInteger('modopago_id');
-            $table->foreign('modopago_id')->references('id')->on('modo_pagos');
+            $table->unsignedInteger('formapago_id');
+            $table->foreign('formapago_id')->references('id')->on('forma_pagos');
             $table->unsignedInteger('periodopago_id');
             $table->foreign('periodopago_id')->references('id')->on('periodo_pagos');
             $table->integer('diafactura')->nullable();

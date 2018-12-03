@@ -34,14 +34,15 @@ class User extends Authenticatable
 {
     use Notifiable;
 
-	protected static function boot () {
-		parent::boot();
-		static::creating(function (User $user) {
-			if( ! \App::runningInConsole()) {
-				$user->slug = str_slug($user->name . " " . $user->last_name, "-");
-			}
-		});
-	}
+    protected static function boot()
+    {
+        parent::boot();
+        static::creating(function (User $user) {
+            if (!\App::runningInConsole()) {
+                $user->slug = str_slug($user->name . " " . $user->last_name, "-");
+            }
+        });
+    }
 
     /**
      * The attributes that are mass assignable.
@@ -49,7 +50,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name','lastname', 'email', 'password',
+        'name', 'lastname', 'email', 'password',
     ];
 
     /**
@@ -61,13 +62,18 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
-    public function pathAttachment () {
-    	return "/images/users/" . $this->picture;
+    public function pathAttachment()
+    {
+        return "/images/users/" . $this->picture;
     }
 
-    public function role () {
-    	return $this->belongsTo(Role::class);
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
     }
 
-
+    public function empresas()
+    {
+        return $this->belongsToMany(Empresa::class);
+    }
 }
