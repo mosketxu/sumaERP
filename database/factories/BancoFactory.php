@@ -4,7 +4,7 @@ use Faker\Generator as Faker;
 
 $factory->define(App\Banco::class, function (Faker $faker) {
     return [
-        'banco' => 'Bank ' . $faker->company,
+        'bank_id' => \App\Bank::all()->random()->id,
         'iban' => $faker->bankAccountNumber,
         'principal' => '1',
     ];

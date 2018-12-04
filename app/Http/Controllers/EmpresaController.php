@@ -28,7 +28,8 @@ class EmpresaController extends Controller
         $empresas = Empresa::with([
             'tipoempresa',
             'bancos' => function ($q) {
-                $q->where('principal', '=', '1');
+                $q->join('banks', 'banks.id', '=', 'bancos.bank_id')
+                    ->where('principal', '=', '1');
             },
             'condFacturacions' => function ($q) {
                 $q->join('forma_pagos', 'forma_pagos.id', '=', 'condicion_facturacions.formapago_id')

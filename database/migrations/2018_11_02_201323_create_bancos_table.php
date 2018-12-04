@@ -17,7 +17,8 @@ class CreateBancosTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('empresa_id');
             $table->foreign('empresa_id')->references('id')->on('empresas')->onDelete('cascade');
-            $table->string('banco');
+            $table->unsignedInteger('bank_id');
+            $table->foreign('bank_id')->references('id')->on('banks')->onDelete('cascade');
             $table->string('iban');
             $table->boolean('principal')->default(0);
             $table->string('observaciones')->nullable();

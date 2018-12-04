@@ -1,6 +1,8 @@
 
 @include('partials.scriptscomun')
 
+<script src="{{asset('js/all.js')}}"></script>
+
 <script>
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());

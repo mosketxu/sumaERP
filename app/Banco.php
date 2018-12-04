@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *
  * @property int $id
  * @property int $empresa_id
- * @property string $name
+ * @property string $bank_id
  * @property string $iban
  * @property int $principal
  * @property string|null $observaciones
@@ -32,11 +32,16 @@ class Banco extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['empresa_id', 'banco', 'iban', 'principal', 'observaciones', 'estado'];
+    protected $fillable = ['empresa_id', 'bank_id', 'iban', 'principal', 'observaciones', 'estado'];
     protected $dates = ['deleted_at'];
 
     public function empresa()
     {
         return $this->belongsTo(Empresa::class);
+    }
+
+    public function banco()
+    {
+        return $this->belongsTo(Bank::class);
     }
 }
