@@ -5,7 +5,7 @@
                 <h5><a href="mailto:info@sumaempresa.com" class="display-9 text-white m-0 p-0"><strong>  info@sumaempresa.com</strong></a></h5>
                 <div class="d-flex justify-content-between text-center mb-2 p-0">
                     <p class="display-9 m-0 p-0">Copyright &copy; <span id="year"></span> </p>
-                    <a class="display-9 text-right m-0 p-0" href={{ route( 'suma','suma/politica') }}>
+                    <a class="display-9 text-right m-0 p-0" href={{ route( 'suma.politica') }}>
                         <span>{{__("Politica de seguridad")}}</span>
                     </a>
                 </div>

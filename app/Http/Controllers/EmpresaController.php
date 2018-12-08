@@ -7,10 +7,20 @@ use App\Empresa;
 
 class EmpresaController extends Controller
 {
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         if (Auth::check()) {
-            return redirect('empresas/home');
+            return redirect('erp/empresas');
         }
         return redirect('login');
     }

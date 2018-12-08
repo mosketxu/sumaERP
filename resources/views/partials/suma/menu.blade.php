@@ -18,13 +18,13 @@
                             </li>
                         @show
                         <li class="nav-item @yield('equipo')">
-                            <a href="{{ route( 'suma','equipo')}}" class="nav-link text-primary ">{{__("Equipo")}}</a>
+                            <a href="{{ route( 'suma.equipo')}}" class="nav-link text-primary ">{{__("Equipo")}}</a>
                         </li>
                         <li class="nav-item @yield('clientes')">
-                            <a href="{{ route( 'suma','suma/clientes')}}" class="nav-link text-primary ">{{__("Clientes")}}</a>
+                            <a href="{{ route( 'suma.clientes')}}" class="nav-link text-primary ">{{__("Clientes")}}</a>
                         </li>
                         <li class="nav-item @yield('contacto')">
-                            <a href="{{ route( 'suma','suma/contacto')}}" class="nav-link text-primary ">{{__("Contacto")}}</a>
+                            <a href="{{ route( 'suma.contacto')}}" class="nav-link text-primary ">{{__("Contacto")}}</a>
                         </li>
                         <li class="nav-item dropdown" >
                             <a href="#" class="nav-link text-primary dropdown-toggle" data-toggle="dropdown"><i class="fas fa-globe-americas fa-lg mt-1"></i></a>

@@ -4,14 +4,14 @@
     <li class="nav-item dropdown" >
         <a href="#" class="nav-link text-primary dropdown-toggle" data-toggle="dropdown">{{__("Servicios")}}</a>
         <div class="dropdown-menu">
-            <a href="{{ route( 'home', '#queofrecemos-head-section')}}" class="dropdown-item">{{__("Qué ofrecemos")}}</a>
-            <a href="{{ route( 'home', '#financiera-head-section')}}" class="dropdown-item">{{__("Área Financiera")}}</a>
-            <a href="{{ route( 'suma', '#contable-head-section')}}" class="dropdown-item">{{__("Área Contable")}}</a>
-            <a href="{{ route( 'suma', '#fiscal-head-section')}}" class="dropdown-item">{{__("Área Fiscal")}}</a>
-            <a href="{{ route( 'suma', '#mercantil-head-section')}} " class=" dropdown-item ">{{__("Área Mercantil")}}</a>
-            <a href="{{ route( 'suma', '#administracion-head-section') }} " class="dropdown-item ">{{__("Administración")}}</a>
-            <a href="{{ route( 'suma', '#consultoria-head-section') }} " class="dropdown-item ">{{__("Consultoría - RRHH")}}</a>
-            <a href="{{ route( 'suma', 'politica') }} " class="dropdown-item ">{{__("Politica de seguridad")}}</a>
+            <a href="{{ route( 'suma.servicios', '#queofrecemos-head-section')}}" class="dropdown-item">{{__("Qué ofrecemos")}}</a>
+            <a href="{{ route( 'suma.servicios', '#financiera-head-section')}}" class="dropdown-item">{{__("Área Financiera")}}</a>
+            <a href="{{ route( 'suma.servicios', '#contable-head-section')}}" class="dropdown-item">{{__("Área Contable")}}</a>
+            <a href="{{ route( 'suma.servicios', '#fiscal-head-section')}}" class="dropdown-item">{{__("Área Fiscal")}}</a>
+            <a href="{{ route( 'suma.servicios', '#mercantil-head-section')}} " class=" dropdown-item ">{{__("Área Mercantil")}}</a>
+            <a href="{{ route( 'suma.servicios', '#administracion-head-section') }} " class="dropdown-item ">{{__("Administración")}}</a>
+            <a href="{{ route( 'suma.servicios', '#consultoria-head-section') }} " class="dropdown-item ">{{__("Consultoría - RRHH")}}</a>
+            <a href="{{ route( 'suma.servicios', 'politica') }} " class="dropdown-item ">{{__("Politica de seguridad")}}</a>
         </div>
     </li>
 @endsection

@@ -6,7 +6,8 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="{{route('home')}}">
-                        <img src="{{ asset('img/clip_azul_150x150.jpg')}}" class="rounded-circle" height="30" id="sumaLogo" alt="Suma Apoyo Empresarial">&nbsp Suma
+                        {{-- <img src="{{ asset('img/clip_azul_150x150.jpg')}}" class="rounded-circle" height="30" id="sumaLogo" alt="Suma Apoyo Empresarial">&nbsp Suma --}}
+                        Suma Empresa
                 </a>
                 <a class="navbar-brand hidden" href="{{route('home')}}"><img src="{{ asset('img/logosuma.jpg')}}" alt="Logo"></a>
             </div>

@@ -6,7 +6,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" /> {{--
     <!-- Custom styles for this template -->--}}
-    <link href="{{asset('css/styles.css')}}" rel="stylesheet">
+    <link href="{{asset('css/suma.css')}}" rel="stylesheet">
 
     <link rel="icon" href="{{ asset('favicon.png') }}">
 
