@@ -13,7 +13,7 @@ class Bank extends Model
 {
     use SoftDeletes;
 
-    protected $fillable = ['bank5', 'bank'];
+    protected $fillable = ['bank'];
     protected $dates = ['deleted_at'];
 
     public function banco()

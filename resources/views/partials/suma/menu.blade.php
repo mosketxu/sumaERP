@@ -1,4 +1,5 @@
         <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top" id="main-nav">
+        
             <div class="container">
                 <a class="navbar-brand " href={{route('home')}}>
                     <img src="{{ asset('img/logosuma.jpg')}}" height="30" class="d-inline-block" id="sumaLogo" alt="Suma Apoyo Empresarial">
@@ -20,12 +21,13 @@
                         <li class="nav-item @yield('equipo')">
                             <a href="{{ route( 'suma.equipo')}}" class="nav-link text-primary ">{{__("Equipo")}}</a>
                         </li>
-                        <li class="nav-item @yield('clientes')">
+                        <li class="nav-item {{setActive('suma.clientes')}}">
                             <a href="{{ route( 'suma.clientes')}}" class="nav-link text-primary ">{{__("Clientes")}}</a>
                         </li>
-                        <li class="nav-item @yield('contacto')">
+                        <li class="nav-item {{setActive('suma.contacto')}}">
                             <a href="{{ route( 'suma.contacto')}}" class="nav-link text-primary ">{{__("Contacto")}}</a>
                         </li>
+
                         <li class="nav-item dropdown" >
                             <a href="#" class="nav-link text-primary dropdown-toggle" data-toggle="dropdown"><i class="fas fa-globe-americas fa-lg mt-1"></i></a>
                             <div class="dropdown-menu">

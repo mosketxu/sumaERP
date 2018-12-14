@@ -19,7 +19,8 @@ class RedirectIfAuthenticated
     {
         if (Auth::guard($guard)->check()) {
             // return redirect('empresas/home');
-            return redirect('erp/empresas');
+            // return redirect('erp/empresas');
+            return redirect('erp');
         }
 
         return $next($request);

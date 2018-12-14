@@ -28,9 +28,11 @@ Route::get('/politica', 'SumaController@politica')->name('suma.politica');
 // Route::get('/empresas', 'EmpresaController@index');
 // Route::get('empresas/home', 'EmpresaController@show')->name('empresasHome');
 
+
 Route::group(['middleware' => ['auth'], 'prefix' => 'erp'], function () {
-    Route::get('/', 'EmpresaController@index');
-    Route::get('/empresas', 'EmpresaController@show')->name('erp.home');
+    Route::get('/', 'ErpController@index');
+    Route::get('/home', 'EmpresaController@index');
+    Route::get('/empresas', 'EmpresaController@show');
 });
 
 // Route::group(['prefix' => 'erp'], function () {

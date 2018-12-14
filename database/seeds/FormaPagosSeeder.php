@@ -14,9 +14,9 @@ class FormaPagosSeeder extends Seeder
         DB::table('forma_pagos')->delete();
 
         DB::table('forma_pagos')->insert([
-            ['forpago3' => 'Dom', 'formapago' => 'Domiciliado'],
-            ['forpago3' => 'Tra', 'formapago' => 'Transferencias ES50 1234 5678 9101 1213'],
-            ['forpago3' => 'NoD', 'formapago' => 'No definido'],
+            ['formapago' => 'Domiciliado'],
+            ['formapago' => 'Transf. ES50 1234 5678 9101 1213'],
+            ['formapago' => 'No definido'],
         ]);
     }
 }

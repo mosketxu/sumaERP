@@ -15,7 +15,6 @@ class CreatePeriodoPagosTable extends Migration
     {
         Schema::create('periodo_pagos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('perpago3', 3);
             $table->string('periodopago');
             $table->timestamps();
         });

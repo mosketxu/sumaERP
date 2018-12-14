@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Empresa;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\DB;
+// use Illuminate\Support\Facades\Input;
+// use Illuminate\Support\Facades\Storage;
+
 
 class EmpresaController extends Controller
 {
@@ -19,14 +24,10 @@ class EmpresaController extends Controller
 
     public function index()
     {
-        if (Auth::check()) {
-            return redirect('erp/empresas');
-        }
-        return redirect('login');
-    }
-
-    public function show()
-    {
+        // if (Auth::check()) {
+        //     return redirect('erp/empresas');
+        // }
+        // return redirect('login');
         // $empresas = DB::table('empresas')
         //     ->join('bancos', 'empresas.id', '=', 'bancos.empresa_id')
         //     ->join('condicion_facturacions', 'empresas.id', '=', 'condicion_facturacions.empresa_id')
@@ -55,6 +56,42 @@ class EmpresaController extends Controller
             return view('partials.erp.suma', compact('empresas'));
         }
         return view('partials.erp.cliente', compact('empresas'));
+    }
+
+    public function create()
+    {
+        $empresas = Empresas::all();
+        return view('partials.erp.cliente', compact('empresas'));
+    }
+
+    public function store(Request $request)
+    {
+        $empresa = new Empresa();
+
+        $empresa->name = $request->name;
+        $empresa->direccion = $request->direccion;
+        $empresa->codpostal = $request->codpostal;
+        $empresa->localidad = $request->localidad;
+        $empresa->provincia_id = $request->provincia_id;
+        $empresa->pais_id = $request->pais_id;
+        $empresa->cifnif = $request->cifnif;
+        $empresa->tfno = $request->tfno;
+        $empresa->email = $request->email;
+        $empresa->web = $request->web;
+        $empresa->idioma = $request->idioma;
+        $empresa->cuentacontable = $request->cuentacontable;
+        $empresa->marta = $request->marta;
+        $empresa->susana = $request->susana;
+        $empresa->observaciones = $request->observaciones;
+        $empresa->estado = 1;
+
+        $empresa->save();;
+
+        return redirect('erp/empresas')->with('message', 'Guardado Satisfactoriamente !');
+    }
+
+    public function show()
+    {
     }
 
 }
