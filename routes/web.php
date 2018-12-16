@@ -24,15 +24,13 @@ Route::get('/clientes', 'SumaController@clientes')->name('suma.clientes');
 Route::get('/contacto', 'SumaController@contacto')->name('suma.contacto');
 Route::get('/politica', 'SumaController@politica')->name('suma.politica');
 
-
-// Route::get('/empresas', 'EmpresaController@index');
-// Route::get('empresas/home', 'EmpresaController@show')->name('empresasHome');
-
-
 Route::group(['middleware' => ['auth'], 'prefix' => 'erp'], function () {
-    Route::get('/', 'ErpController@index');
-    Route::get('/home', 'EmpresaController@index');
-    Route::get('/empresas', 'EmpresaController@show');
+    Route::get('/', 'EmpresaController@index')->name('empresas.index');
+    // Route::get('/home', 'EmpresaController@index');
+    Route::get('/empresas', 'EmpresaController@show')->name('empresas.show');
+    Route::group(['middleware' => ['permission:destroy_empresas']], function () {
+        Route::get('/empresas/{id}/destroy', 'EmpresaController@destroy')->name('empresas.destroy');
+    });
 });
 
 // Route::group(['prefix' => 'erp'], function () {

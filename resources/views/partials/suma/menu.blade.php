@@ -2,7 +2,7 @@
         
             <div class="container">
                 <a class="navbar-brand " href={{route('home')}}>
-                    <img src="{{ asset('img/logosuma.jpg')}}" height="30" class="d-inline-block" id="sumaLogo" alt="Suma Apoyo Empresarial">
+                    <img src="{{ asset('storage/img/logosuma.jpg')}}" height="30" class="d-inline-block" id="sumaLogo" alt="Suma Apoyo Empresarial">
                 </a>
                 <button class="navbar-toggler" 
                         type="button" 

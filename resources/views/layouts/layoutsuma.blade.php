@@ -20,4 +20,6 @@
     @include('partials.suma.footer')
 </footer>
 
-@include('partials.suma.scripts')
+{{-- @include('partials.suma.scripts') --}}
+@include('partials.scriptscomun')
+@yield('scriptsextra')

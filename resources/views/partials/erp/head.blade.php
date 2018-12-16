@@ -1,37 +1,33 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Suma Apoyo Empresarial SL - ERP">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="description" content="Suma Apoyo Empresarial SL - ERP">
+    
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
+    <title>@yield('title')</title>
+    
     <link rel="icon" href="{{ asset('favicon.png') }}">
     <link rel="apple-touch-icon" href="{{ asset('favicon.png') }}">
     <link rel="shortcut icon" href="{{ asset('favicon.png') }}">
 
-    {{-- <link href="{{asset('css/bootstrap.css')}}" rel="stylesheet">  --}}
-    {{-- <link href="{{asset('css/all.css')}}" rel="stylesheet">  --}}
-    {{-- <link href="{{asset('font-awesome/css/font-awesome.min.css')}}" rel="stylesheet"> 
-    <link href="{{asset('themify-icons/css/themify-icons.css')}}" rel="stylesheet"> 
-    <link href="{{asset('selectFX/css/cs-skin-elastic.css')}}" rel="stylesheet"> --}}
 
-    <link rel="stylesheet" href="{{asset('vendors/bootstrap/dist/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('vendors/font-awesome/css/font-awesome.min.css')}}">
-    <link rel="stylesheet" href="{{asset('vendors/themify-icons/css/themify-icons.css')}}">
-    <link rel="stylesheet" href="{{asset('vendors/selectFX/css/cs-skin-elastic.css')}}">
-    <link rel="stylesheet" href="{{asset('vendors/jqvmap/dist/jqvmap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('vendors/datatables.net-bs4/css/dataTables.bootstrap4.min.css')}}">
-    <link rel="stylesheet" href="{{asset('vendors/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css')}}">
+    <!-- Bootstrap core CSS v4.1.3-->
+    <link href="storage/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">  
 
+    <!-- Custom fonts for this template v5.3.1-->
+    <link href="storage/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
 
-    <link href="{{asset('css/style.css')}}" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- Page level plugin CSS-->
+    <link href="storage/vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" /> 
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom styles for this app -->
+    <link href="css/erp.css" rel="stylesheet">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-
-    <title>{{ config('app.name', 'Suma Empresa-ERP') }}</title>
-    <title>@yield('title')</title>
-
-    <!-- Styles -->

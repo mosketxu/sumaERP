@@ -11,7 +11,7 @@
             <a href="{{ route( 'suma.servicios', '#mercantil-head-section')}} " class=" dropdown-item ">{{__("Área Mercantil")}}</a>
             <a href="{{ route( 'suma.servicios', '#administracion-head-section') }} " class="dropdown-item ">{{__("Administración")}}</a>
             <a href="{{ route( 'suma.servicios', '#consultoria-head-section') }} " class="dropdown-item ">{{__("Consultoría - RRHH")}}</a>
-            <a href="{{ route( 'suma.servicios', 'politica') }} " class="dropdown-item ">{{__("Politica de seguridad")}}</a>
+            <a href="{{ route( 'suma.politica') }} " class="dropdown-item ">{{__("Politica de seguridad")}}</a>
         </div>
     </li>
 @endsection
@@ -87,3 +87,35 @@
         @include('partials.suma.en.ppalEn')    
     @endsection
 @endif
+
+@section('scriptsextra')
+    <script>
+        // Configure Slider
+        $('.carousel').carousel({
+        interval: 6000,
+        pause: 'hover'
+        });
+
+        // Init Scrollspy
+        $('body').scrollspy({ target: '#main-nav' });
+
+        // Smooth Scrolling
+        $("#main-nav a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+                    window.location.hash = hash;
+                });
+            }
+        });
+
+        // Lightbox Init
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+        });
+    </script> 
+@endsection

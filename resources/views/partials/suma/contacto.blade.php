@@ -18,6 +18,9 @@
                     <p class="display-7 text-muted">{{__("o envíanos un mail a...")}}</p>
                     <a href="mailto:info@sumaempresa.com" class="display-7"><i class="fas fa-at fa-lg"></i> info@sumaempresa.com</a>
                     <p class="small text-muted pt-1 px-4">{{__("Inscrita")}}</p>
+                    <a class="display-9 text-right m-0 p-0" href={{ route( 'suma.politica') }}>
+                        <span>{{__("Politica de seguridad")}}</span>
+                    </a>
                 </div>
             </div>
         </div>

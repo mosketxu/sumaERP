@@ -50,12 +50,20 @@ class EmpresaController extends Controller
         // dd($empresas);
         // dd($empresas->banco->banco);
         // dd($empresas->tipoempresa->tipoempresa);
+        
+        /*
+        Antes de usar roles de spatie hacie esto
         if (auth()->user()->role_id == '1') {
             return view('partials.erp.admin', compact('empresas'));
         } elseif (auth()->user()->role_id == '2') {
             return view('partials.erp.suma', compact('empresas'));
         }
         return view('partials.erp.cliente', compact('empresas'));
+         */
+
+        //con roles de spatie
+        return view('partials.erp.admin', compact('empresas'));
+
     }
 
     public function create()
@@ -92,6 +100,12 @@ class EmpresaController extends Controller
 
     public function show()
     {
+    }
+
+    public function destroy($id)
+    {
+        Empresa::findOrFail($id)->delete();
+        return redirect()->back();
     }
 
 }

@@ -191,7 +191,7 @@
 }
 
 .carousel-image-1 {
-    background: url("../img/LOGO_SUMA_1200x400.jpg");
+    background: url("../storage/img/LOGO_SUMA_1200x400.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 55%;
@@ -199,7 +199,7 @@
 
 /* Contabilidad */
 .carousel-image-2 {
-    background: url("../img/rawpixel-252130-unsplashRedim.jpg");
+    background: url("../storage/img/rawpixel-252130-unsplashRedim.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 50%;
@@ -220,7 +220,7 @@
 
 /* Fiscalidad */
 .carousel-image-3 {
-    background: url("../img/apple-brainstorming-business-908288redim.jpg");
+    background: url("../storage/img/apple-brainstorming-business-908288redim.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 50%;
@@ -229,7 +229,7 @@
 
 /* Administracion */
 .carousel-image-4 {
-    background: url("../img/estee-janssens-396887-unsplashRedim.jpg");
+    background: url("../storage/img/estee-janssens-396887-unsplashRedim.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 50%;
@@ -238,7 +238,7 @@
 
 /* Consultoria */
 .carousel-image-5 {
-    background: url("../img/rawpixel-570911-unsplashRedim.jpg");
+    background: url("../storage/img/rawpixel-570911-unsplashRedim.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 50%;
@@ -265,7 +265,7 @@
 #consultoria-head-section {
     position: relative;
     min-height: 200px;
-    background: url("../img/attach-2092_1920.jpg");
+    background: url("../storage/img/attach-2092_1920.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position-y: 80%;
@@ -277,7 +277,7 @@
 /* EQUIPO */
 #equipo-header {
     height: 450px;
-    background: url("../img/rawpixel-653764-unsplashRedim.jpg");
+    background: url("../storage/img/rawpixel-653764-unsplashRedim.jpg");
     background-size: cover;
     background-position-x: center;
     background-position-y: 50%;
@@ -319,7 +319,7 @@
 /* CLIENTES */
 #clientes-header {
     height: 450px;
-    background: url("../img/rawpixel-974545-unsplashRedim.jpg");
+    background: url("../storage/img/rawpixel-974545-unsplashRedim.jpg");
     background-size: cover;
     background-position-x: center;
     background-position-y: 50%;
@@ -338,7 +338,7 @@
 /* CONTACT */
 #contacto-header {
     height: 450px;
-    background: url("../img/milkovi-444287-unsplashRedim.jpg");
+    background: url("../storage/img/milkovi-444287-unsplashRedim.jpg");
     background-size: cover;
     background-position-x: center;
     background-position-y: 80%;
@@ -348,7 +348,7 @@
 
 #contacto-section {
     height: 960px;
-    background: url("../img/DSC_0943FondoRedim.jpg");
+    background: url("../storage/img/DSC_0943FondoRedim.jpg");
     background-size: cover;
     background-position-x: center;
     background-position-y: 70%;
@@ -438,7 +438,7 @@
     }
 
     .carousel-image-1 {
-        background: url("../img/LOGO_SUMA_1200x400.jpg");
+        background: url("../storage/img/LOGO_SUMA_1200x400.jpg");
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: 75%;
@@ -447,7 +447,7 @@
 
     /* Contabilidad */
     .carousel-image-2 {
-        background: url("../img/rawpixel-252130-unsplashRedim.jpg");
+        background: url("../storage/img/rawpixel-252130-unsplashRedim.jpg");
         background-repeat: no-repeat;
         background-position: center;
         /* background-position-y: -400px; */
