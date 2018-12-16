@@ -11,8 +11,8 @@ class RolesSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Role::class, 1)->create(['name' => 'admin', 'guard_name' => 'web']);
-        factory(\App\Role::class, 1)->create(['name' => 'suma', 'guard_name' => 'web']);
-        factory(\App\Role::class, 1)->create(['name' => 'externo', 'guard_name' => 'web']);
+        factory(\App\Role::class, 1)->create(['rol' => 'admin', 'descripcion' => 'administrador']);
+        factory(\App\Role::class, 1)->create(['rol' => 'suma', 'descripcion' => 'miembro de suma']);
+        factory(\App\Role::class, 1)->create(['rol' => 'externo', 'descripcion' => 'externo']);
     }
 }

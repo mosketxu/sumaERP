@@ -13,7 +13,8 @@ class UsersSeeder extends Seeder
 	{
 		factory(\App\User::class, 1)->create([
 			'name' => 'admin',
-			'email' => 'admin@mail.com',
+			'email' => 'admin@admin.com',
+			'slug' => 'admin',
 			'password' => bcrypt('1234'),
 			'role_id' => \App\Role::ADMIN
 		]);
@@ -21,13 +22,15 @@ class UsersSeeder extends Seeder
 		factory(\App\User::class, 1)->create([
 			'name' => 'alex',
 			'email' => 'alex@alex.com',
+			'slug' => 'alex',
 			'password' => bcrypt('1234'),
 			'role_id' => \App\Role::SUMA
 		]);
 
 		factory(\App\User::class, 1)->create([
-			'name' => 'cliente1',
-			'email' => 'cliente@cliente.com',
+			'name' => 'cliente 1',
+			'email' => 'cliente1@cliente.com',
+			'slug' => 'cliente-1',
 			'password' => bcrypt('1234'),
 			'role_id' => \App\Role::EXTERNO
 		]);

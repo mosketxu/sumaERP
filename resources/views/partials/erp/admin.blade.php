@@ -126,11 +126,7 @@
                                     @endif
                                 </td>
                                 <td>
-                                    @can('destroy_empresas')
-                                        <a href="{{route('empresas.destroy',$empresa->id) }}"><i class="far fa-trash-alt"></i></a>
-                                    @else
-                                        No
-                                    @endcan
+                                    <a href="{{route('empresas.destroy',$empresa->id) }}"><i class="far fa-trash-alt"></i></a>
                                 </td>
                             </tr>
                         @endforeach
@@ -142,5 +138,3 @@
         </div>
     </div>
 @endsection
-
-
