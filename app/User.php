@@ -70,10 +70,10 @@ class User extends Authenticatable
         return "/images/users/" . $this->picture;
     }
 
-    // public function role()
-    // {
-    //     return $this->belongsTo(Role::class);
-    // }
+    public function role()
+    {
+        return $this->belongsTo(Role::class);
+    }
 
     public function empresas()
     {
