@@ -1,16 +1,16 @@
     <!-- Bootstrap core JavaScript Bundle=bootstrap.min.js + popper.js.   Jquery v3.3.1-->
-    <script src="storage/vendor/jquery/jquery.min.js"></script>
-    <script src="storage/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{asset('/storage/vendor/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('/storage/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="storage/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="{{asset('/storage/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin.min.js"></script>
+    <script src="{{asset('/js/sb-admin.min.js')}}"></script>
 
     <!-- Demo scripts for this page-->
-    <script src="js/demo/datatables-demo.js"></script>
-    <script src="js/demo/chart-area-demo.js"></script>
+    {{-- <script src="{{asset('/js/demo/datatables-demo.js')}}"></script> --}}
+    {{-- <script src="{{asset('/js/demo/chart-area-demo.js')}}"></script> --}}
 
 <script>
     // Get the current year for the copyright

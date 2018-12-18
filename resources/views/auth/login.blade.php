@@ -13,7 +13,7 @@
                     <div class="row">
                     <div class="col-md-4">
                         <a href={{route('home')}}>
-                            <img src="{{ asset('img/logosuma.jpg')}}" id="sumaLogo" alt="Suma Apoyo Empresarial">
+                            <img src="{{ asset('storage/img/logosuma.jpg')}}" id="sumaLogo" alt="Suma Apoyo Empresarial">
                         </a>
                     </div>
                     <div class="col-md-8">

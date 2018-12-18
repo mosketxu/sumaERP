@@ -126,7 +126,9 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <a href="{{route('empresas.destroy',$empresa->id) }}"><i class="far fa-trash-alt"></i></a>
+                                    <a href="{{route('empresas.show',$empresa->slug) }}"><i class="far fa-eye text-success"></i></a>
+                                    <a href="{{route('empresas.edit',$empresa->id) }}"><i class="far fa-edit text-primary"></i></a>
+                                    <a href="{{route('empresas.destroy',$empresa->id) }}"><i class="far fa-trash-alt text-danger"></i></a>
                                 </td>
                             </tr>
                         @endforeach

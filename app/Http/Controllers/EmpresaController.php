@@ -5,37 +5,17 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Empresa;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Support\Facades\DB;
-// use Illuminate\Support\Facades\Input;
-// use Illuminate\Support\Facades\Storage;
 
 
 class EmpresaController extends Controller
 {
     /**
-     * Create a new controller instance.
+     * Display a listing of the resource.
      *
-     * @return void
+     * @return \Illuminate\Http\Response
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     public function index()
     {
-        // if (Auth::check()) {
-        //     return redirect('erp/empresas');
-        // }
-        // return redirect('login');
-        // $empresas = DB::table('empresas')
-        //     ->join('bancos', 'empresas.id', '=', 'bancos.empresa_id')
-        //     ->join('condicion_facturacions', 'empresas.id', '=', 'condicion_facturacions.empresa_id')
-        //     ->join('forma_pagos', 'forma_pagos.id', '=', 'condicion_facturacions.formapago_id')
-        //     ->join('periodo_pagos', 'periodo_pagos.id', '=', 'condicion_facturacions.periodopago_id')
-        //     ->join('tipo_empresas', 'tipo_empresas.id', '=', 'empresas.tipoempresa_id')
-        //     ->get();
-
         $empresas = Empresa::with([
             'tipoempresa',
             'bancos' => function ($q) {
@@ -47,24 +27,33 @@ class EmpresaController extends Controller
                     ->join('periodo_pagos', 'periodo_pagos.id', '=', 'condicion_facturacions.periodopago_id');
             }
         ])->get();
-        // dd($empresas);
-        // dd($empresas->banco->banco);
-        // dd($empresas->tipoempresa->tipoempresa);
 
-        if (auth()->user()->role_id == '1') {
-            return view('partials.erp.admin', compact('empresas'));
-        } elseif (auth()->user()->role_id == '2') {
-            return view('partials.erp.suma', compact('empresas'));
-        }
-        return view('partials.erp.cliente', compact('empresas'));
+        // if (auth()->user()->role_id == '1') {
+        return view('partials.erp.admin', compact('empresas'));
+        // } elseif (auth()->user()->role_id == '2') {
+            // return view('partials.erp.suma', compact('empresas'));
+        // }
+        // return view('partials.erp.cliente', compact('empresas'));
+
     }
 
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function create()
     {
         $empresas = Empresas::all();
         return view('partials.erp.cliente', compact('empresas'));
     }
 
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
     public function store(Request $request)
     {
         $empresa = new Empresa();
@@ -89,16 +78,65 @@ class EmpresaController extends Controller
         $empresa->save();;
 
         return redirect('erp/empresas')->with('message', 'Guardado Satisfactoriamente !');
+
     }
 
-    public function show()
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($slug)
     {
+        $empresa = Empresa::with([
+            'tipoempresa',
+            'bancos' => function ($q) {
+                $q->join('banks', 'banks.id', '=', 'bancos.bank_id')
+                    ->where('principal', '=', '1');
+            },
+            'condFacturacions' => function ($q) {
+                $q->join('forma_pagos', 'forma_pagos.id', '=', 'condicion_facturacions.formapago_id')
+                    ->join('periodo_pagos', 'periodo_pagos.id', '=', 'condicion_facturacions.periodopago_id');
+            }
+        ])->whereSlug($slug)->first();
+
+        return view('partials.erp.empresa', compact('empresa'));
+        // return view('partials.erp.empresa');
     }
 
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        //
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
     public function destroy($id)
     {
         Empresa::findOrFail($id)->delete();
         return redirect()->back();
     }
-
 }
